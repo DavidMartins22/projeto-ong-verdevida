@@ -217,4 +217,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Navegação inicial
   navigateTo(window.location.hash || "#home");
+
+  // Alternar tema claro/escuro
+  const btn = document.getElementById("toggle-theme");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      const isDark = document.body.classList.contains("dark-mode");
+      btn.textContent = isDark ? "☀️ Modo Claro" : "🌙 Modo Escuro";
+    });
+  }
 });
