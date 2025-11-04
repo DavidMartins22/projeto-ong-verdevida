@@ -28,7 +28,34 @@ Desenvolvido em conformidade com as diretrizes WCAG 2.1 Nível AA, versionamento
 
 🧠 Créditos e Agradecimentos
 
+<<<<<<< HEAD
 🚀 Tecnologias Utilizadas Categoria Ferramenta / Tecnologia Descrição Frontend HTML5 / CSS3 / JavaScript (ES6+) Estrutura semântica, responsiva e interativa Controle de versão Git / GitHub Versionamento com GitFlow e commits semânticos Acessibilidade WCAG 2.1 / ARIA / Leitores de tela Navegação inclusiva e padrões de acessibilidade Otimização TinyPNG / Minify / Squoosh Compressão e minificação de arquivos Hospedagem GitHub Pages / Vercel Deploy em ambiente de produção 📂 Estrutura do Projeto 📦 verdevida ┣ 📂 src ┃ ┣ 📂 css ┃ ┃ ┣ style.css ┃ ┃ ┗ style.min.css ┃ ┣ 📂 js ┃ ┃ ┣ app.js ┃ ┃ ┗ app.min.js ┃ ┣ 📂 img ┃ ┃ ┣ logo.webp ┃ ┃ ┗ projetos/ ┣ 📜 index.html ┣ 📜 projetos.html ┣ 📜 cadastro.html ┣ 📜 README.md ┗ 📜 LICENÇA ♿ Acessibilidade (WCAG 2.1 Nível AA)
+=======
+🚀 Tecnologias Utilizadas
+Categoria Ferramenta / Tecnologia Descrição
+Frontend HTML5 / CSS3 / JavaScript (ES6+) Estrutura semântica, responsiva e interativa
+Controle de Versão Git / GitHub Versionamento com GitFlow e commits semânticos
+Acessibilidade WCAG 2.1 / ARIA / Leitores de tela Navegação inclusiva e padrões de acessibilidade
+Otimização TinyPNG / Minify / Squoosh Compressão e minificação de arquivos
+Hospedagem GitHub Pages / Vercel Deploy em ambiente de produção
+📂 Estrutura do Projeto
+📦 verdevida
+┣ 📂 src
+┃ ┣ 📂 css
+┃ ┃ ┣ style.css
+┃ ┃ ┗ style.min.css
+┃ ┣ 📂 js
+┃ ┃ ┣ app.js
+┃ ┃ ┗ app.min.js
+┃ ┣ 📂 img
+┃ ┃ ┣ logo.webp
+┃ ┃ ┗ projetos/
+┣ 📜 index.html
+┣ 📜 projetos.html
+┣ 📜 cadastro.html
+┣ 📜 README.md
+┗ 📜 LICENSE
+>>>>>>> b1f281a03b589ad01ccbe2514658234caff2e2cd
 
 O projeto foi desenvolvido em conformidade com as recomendações das Diretrizes de Acessibilidade de Conteúdo da Web (WCAG 2.1).
 
@@ -48,10 +75,27 @@ Leitores de tela: atributos alt, aria-label e role aplicados corretamente
 
 💡 Exemplo de Implementação
 
+<<<<<<< HEAD
 Não se trata de uma questão de...
 Projetos
 Contato
 @media (prefers-color-scheme: dark) { body { background-color: #121212; color: #ffffff; } }
+=======
+<nav aria-label="Menu principal">
+  <ul>
+    <li><a href="index.html" aria-current="page">Início</a></li>
+    <li><a href="projetos.html">Projetos</a></li>
+    <li><a href="contato.html">Cadastro</a></li>
+  </ul>
+</nav>
+
+@media (prefers-color-scheme: dark) {
+body {
+background-color: #121212;
+color: #ffffff;
+}
+}
+>>>>>>> b1f281a03b589ad01ccbe2514658234caff2e2cd
 
 ⚙️ Otimização para Produção
 
@@ -111,4 +155,8 @@ Este projeto está licenciado sob uma licença do MIT. Você é livre para usar,
 
 💡 Apoio: OpenAI / ChatGPT — suporte técnico e revisão didática
 
+<<<<<<< HEAD
 🌐 Ferramentas: GitHub, VS Code, Lighthouse, Wave, TinyPNGF
+=======
+🌐 Ferramentas: GitHub, VS Code, Lighthouse, Wave, TinyPNG
+>>>>>>> b1f281a03b589ad01ccbe2514658234caff2e2cd
