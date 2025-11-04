@@ -418,6 +418,83 @@ dialog#modal-termos section {
 }
 
 /* ==========================
+   🌙 Tema Escuro Completo
+========================== */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Sobrescreve variáveis globais */
+body.dark-mode :root,
+body.dark-mode {
+    --color-primary: #0d5c26;
+    --color-secondary: #2e7d32;
+    --color-accent: #43a047;
+    --color-light: #121212;
+    --color-dark: #f1f1f1;
+    --color-neutral-100: #1e1e1e;
+    --color-neutral-300: #333333;
+    --color-neutral-500: #aaaaaa;
+    --color-neutral-900: #ffffff;
+}
+
+/* Header e footer */
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: var(--color-primary);
+    color: var(--color-neutral-900);
+}
+
+/* Cards */
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+/* Formulários */
+body.dark-mode form {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid var(--color-accent);
+}
+
+/* Inputs */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    border: 1px solid var(--color-secondary);
+}
+
+/* Links e botões */
+body.dark-mode a {
+    color: #81c784;
+}
+
+body.dark-mode button,
+body.dark-mode .btn {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+body.dark-mode button:hover,
+body.dark-mode .btn:hover {
+    background-color: var(--color-accent);
+}
+
+/* Menu */
+body.dark-mode nav ul li a {
+    color: #dcedc8;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #a5d6a7;
+}
+
+/* ==========================
    Animações
 ========================== */
 @keyframes fadeIn {
