@@ -48,12 +48,10 @@ Hospedagem GitHub Pages / Vercel Deploy em ambiente de produção
 ┃ ┃ ┣ logo.webp
 ┃ ┃ ┗ projetos/
 ┣ 📜 index.html
-┣ 📜 sobre.html
 ┣ 📜 projetos.html
-┣ 📜 contato.html
+┣ 📜 cadastro.html
 ┣ 📜 README.md
-┣ 📜 LICENSE
-┗ 📜 .gitignore
+┗ 📜 LICENSE
 
 ♿ Acessibilidade (WCAG 2.1 Nível AA)
 
@@ -201,7 +199,7 @@ David Martins Desenvolvedor Front-End / Autor GitHub • LinkedIn
 
 🧠 Créditos e Agradecimentos
 
-🎓 Instituição: [Cruzeiro do SUl Virtual / ADS]
+🎓 Instituição: [Cruzeiro do Sul Virtual / ADS]
 
 💡 Apoio: OpenAI / ChatGPT — suporte técnico e revisão didática
 
