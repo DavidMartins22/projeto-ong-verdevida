@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos & Voluntariado | ONG VerdeVida</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./src/favicons/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/css/style.min.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+      <a href="index.html"
+        ><img
+          src="./src/img/VerdeVida.png"
+          alt="Logo da ONG VerdeVida"
+          class="logo"
+      /></a>
+      <h1 class="nome">Ong VerdeVida</h1>
+      <nav class="menu-mobile" id="menu-mobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li>
+            <a href="#" id="projetos-toggle">Projetos ▾</a>
+            <ul class="submenu">
+              <li><a href="projetos.html#projetos-ativos">Ativos</a></li>
+              <li>
+                <a href="projetos.html#projetos-concluidos">Concluídos</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+      <button id="menu-btn">☰</button>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main id="home">
+      <!-- ==================== Introdução ==================== -->
+      <section>
+        <h1>🌱 Nossos Projetos Ambientais</h1>
+        <p>
+          Conheça as iniciativas que estão transformando comunidades e
+          preservando o meio ambiente em todo o Brasil.
+        </p>
+      </section>
+
+      <!-- Projetos em andamento -->
+      <section aria-labelledby="projetos-ativos" class="card">
+        <h2 id="projetos-ativos">Projetos em andamento</h2>
+        <article>
+          <h3>
+            EcoTech Jovem & Floresta Inteligente<span class="badge"
+              >Ativos</span
+            >
+          </h3>
+
+          <p>
+            O projeto <strong>EcoTech Jovem</strong> oferece capacitação de
+            jovens em tecnologias verdes, compostagem automatizada e
+            desenvolvimento de aplicativos de mapeamento ecológico, promovendo
+            educação ambiental e inovação.
+          </p>
+
+          <p>
+            Já o projeto <strong>Floresta Inteligente</strong> realiza o
+            monitoramento de áreas reflorestadas com drones e sensores
+            climáticos. Atualmente cobre três estados e já plantou mais de 20
+            mil mudas nativas.
+          </p>
+
+          <ul>
+            <li>📍 Locais: Salvador, BA e Amazônia Legal</li>
+            <li>📅 Início: Março de 2024 e Fevereiro de 2025</li>
+            <li>🔄 Status: Em expansão e Ativo</li>
+          </ul>
+
+          <div>
+            <span class="tag">Educação</span>
+            <span class="tag">Tecnologia Verde</span>
+            <span class="tag">Juventude</span>
+            <span class="tag">Reflorestamento</span>
+            <span class="tag">Tecnologia</span>
+            <span class="tag">Monitoramento</span>
+          </div>
+        </article>
+
+        <section class="carrossel" id="carrossel-ativo">
+          <button class="btn-esquerdo">⬅</button>
+          <div class="carrossel-container">
+            <img
+              src="./src/img/EcoTech-Jovem.png"
+              alt="EcoTech Jovem"
+              class="carrossel-img"
+            />
+            <img
+              src="./src/img/Floresta-Inteligente.png"
+              alt="Floresta Inteligente"
+              class="carrossel-img ativo"
+            />
+          </div>
+          <button class="btn-direito">➡</button>
+        </section>
+      </section>
+
+      <!-- Projetos concluídos -->
+      <section aria-labelledby="projetos-concluidos" class="card">
+        <h2 id="projetos-concluidos">Projetos Concluídos</h2>
+        <article>
+          <h3>EcoArte & BioLuz <span class="badge">Finalizados</span></h3>
+
+          <p>
+            O projeto <strong>EcoArte</strong> promoveu oficinas de arte com
+            materiais recicláveis para crianças e adolescentes, promovendo a
+            consciência ambiental e a criatividade das crianças. As obras foram
+            expostas em centros culturais e escolas.
+          </p>
+
+          <p>
+            Já o projeto <strong>BioLuz</strong> instalou biodigestores em
+            comunidades rurais para geração de energia limpa a partir de
+            resíduos orgânicos, beneficiando 150 famílias e reduzindo em 40% o
+            uso de lenha.
+          </p>
+
+          <ul>
+            <li>📍 Locais: Porto Alegre, RS e Chapada Diamantina, BA</li>
+            <li>📅 Períodos: 2020–2024</li>
+            <li>✅ Status: Finalizados</li>
+          </ul>
+
+          <div>
+            <span class="tag">Arte</span>
+            <span class="tag">Reciclagem</span>
+            <span class="tag">Infantil</span>
+            <span class="tag">Energia</span>
+            <span class="tag">Sustentabilidade</span>
+            <span class="tag">Comunidade</span>
+          </div>
+        </article>
+        <section class="carrossel" id="carrossel-concluido">
+          <button class="btn-esquerdo">⬅</button>
+          <div class="carrossel-container">
+            <img
+              src="./src/img/EcoArte.png"
+              alt="EcoArte"
+              class="carrossel-img ativo"
+            />
+            <img
+              src="./src/img/BioLuz.png"
+              alt="BioLuz"
+              class="carrossel-img"
+            />
+          </div>
+          <button class="btn-direito">➡</button>
+        </section>
+      </section>
+
+      <!-- ==================== Voluntariado ==================== -->
+      <section>
+        <h1>🙋‍♂️ Seja um Voluntário VerdeVida</h1>
+        <p>
+          Junte-se à nossa rede de voluntários e contribua com ações que fazem a
+          diferença.
+        </p>
+      </section>
+
+      <section>
+        <h2>🌿 Por que ser voluntário?</h2>
+        <ul>
+          <li>Contribuir com projetos de impacto ambiental</li>
+          <li>Desenvolver habilidades em sustentabilidade e liderança</li>
+          <li>Participar de eventos, mutirões e capacitações</li>
+          <li>Receber certificado de participação e reconhecimento</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>📌 Áreas de atuação</h2>
+        <ul>
+          <li>🌱 Reflorestamento e jardinagem urbana</li>
+          <li>📚 Educação ambiental em escolas</li>
+          <li>📸 Comunicação e mídias sociais</li>
+          <li>📦 Logística e apoio em eventos</li>
+          <li>🧪 Pesquisa e monitoramento ecológico</li>
+        </ul>
+      </section>
+
+      <!-- ==================== Formulário de voluntariado ==================== -->
+      <section>
+        <h2>📝 Inscreva-se como voluntário</h2>
+        <form id="form-voluntario" novalidate>
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" required />
+          <span class="erro-msg"></span>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+          <span class="erro-msg"></span>
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required />
+          <span class="erro-msg"></span>
+
+          <label for="area">Área de interesse:</label>
+          <select name="area" id="area" required>
+            <option value="">Selecione</option>
+            <option value="reflorestamento">Reflorestamento</option>
+            <option value="educacao">Educação ambiental</option>
+            <option value="comunicacao">Comunicação</option>
+            <option value="logistica">Logística</option>
+            <option value="pesquisa">Pesquisa ecológica</option>
+          </select>
+
+          <button type="submit">Quero ser um voluntário</button>
+          <div id="mensagem-cadastro"></div>
+        </form>
+        <div id="mensagem-voluntario"></div>
+      </section>
+
+      <!-- ==================== Doações ==================== -->
+      <section>
+        <h1>💚 Apoie a causa ambiental</h1>
+        <p>
+          Suas doações ajudam a preservar o meio ambiente, educar comunidades e
+          transformar vidas.
+        </p>
+      </section>
+
+      <section>
+        <h2>🌱 Como sua doação é usada</h2>
+        <ul>
+          <li>Compra de mudas nativas para reflorestamento</li>
+          <li>Materiais educativos para oficinas em escolas</li>
+          <li>Equipamento para monitoramento ambiental</li>
+          <li>Infraestrutura para comunidades sustentáveis</li>
+          <li>Capacitação de voluntários e agentes locais</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>📦 Tipos de doação</h2>
+        <ul>
+          <li>💳 Doação única via cartão ou Pix</li>
+          <li>🔁 Doação mensal recorrente</li>
+          <li>🏢 Parcerias com empresas e instituições</li>
+          <li>🎁 Doações de materiais e equipamentos</li>
+        </ul>
+      </section>
+
+      <!-- ==================== Formulário de doação ==================== -->
+      <section>
+        <h2>📝 Faça sua doação</h2>
+        <form id="form-doacao" novalidate>
+          <label for="nome">Nome completo:</label>
+          <input type="text" id="nome" name="nome" required />
+          <span class="erro-msg"></span>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+          <span class="erro-msg"></span>
+
+          <label for="valor">Valor da doação (R$):</label>
+          <input type="number" id="valor" name="valor" required min="5" />
+          <span class="erro-msg"></span>
+
+          <label for="tipo">Tipo de doação:</label>
+          <select name="tipo" id="tipo" required>
+            <option value="">Selecione</option>
+            <option value="unica">Doação única</option>
+            <option value="mensal">Doação mensal</option>
+            <option value="material">Doação de materiais</option>
+            <option value="empresa">Parceria institucional</option>
+          </select>
+
+          <button type="submit">Contribuir agora</button>
+          <div id="mensagem-cadastro"></div>
+        </form>
+        <div id="mensagem-doacao"></div>
+      </section>
+    </main>
+
+    <!-- ==================== MODAL DE TERMOS ==================== -->
+    <dialog id="modal-termos">
+      <header>
+        <h3>📜 Termos e Políticas</h3>
+      </header>
+
+      <section>
+        <p>
+          Ao se cadastrar ou enviar mensagens, você concorda com os termos de
+          uso da ONG VerdeVida, incluindo o uso responsável dos dados e respeito
+          à nossa missão ambiental.
+        </p>
+      </section>
+
+      <footer>
+        <button onclick="document.getElementById('modal-termos').close()">
+          Concordo
+        </button>
+      </footer>
+    </dialog>
+
+    <footer id="contato">
+      <p>
+        📧 contato@verdevida.org.br | 📍 São Paulo - SP | CNPJ:
+        00.000.000/0002-10
+      </p>
+      <p>&copy; 2025 ONG VerdeVida</p>
+      <a href="#" onclick="document.getElementById('modal-termos').showModal()"
+        >Ver termos da ONG</a
+      >
+    </footer>
+
+    <script src="./src/js/app.min.js" defer></script>
+  </body>
+</html>

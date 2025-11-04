@@ -1,0 +1,506 @@
+/* ==========================
+   Variáveis e Paleta de Cores
+========================== */
+:root {
+    /* Paleta de cores */
+    --color-primary: #2e7d32;
+    --color-secondary: #66bb6a;
+    --color-accent: #43a047;
+    --color-light: #f4fdf4;
+    --color-dark: #1b5e20;
+    --color-neutral-100: #ffffff;
+    --color-neutral-300: #cccccc;
+    --color-neutral-500: #666666;
+    --color-neutral-900: #000000;
+
+    /* Tipografia */
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.5rem;
+    --font-xl: 2rem;
+
+    /* Espaçamento modular */
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+    --space-6: 64px;
+
+    /* Bordas e radius */
+    --radius-sm: 6px;
+    --radius-xl: 8px;
+    --radius-md: 12px;
+    --radius-xm: 16px;
+    --radius-lg: 24px;
+}
+
+/* ==========================
+   Reset e Box Sizing
+========================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================
+   Layout Principal
+========================== */
+body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--space-2);
+    background-color: var(--color-light);
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    grid-column: 2 / span 10;
+}
+
+/* Header e Footer */
+header,
+footer {
+    grid-column: 1 / span 12;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100);
+    padding: var(--space-2);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-2) var(--space-4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ==========================
+   Tipografia e Elementos
+========================== */
+label {
+    display: block;
+    margin-bottom: var(--space-1);
+    font-weight: 500;
+}
+
+button,
+.btn {
+    padding: 12px var(--space-3);
+    border-radius: var(--radius-xl);
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+button:hover,
+.btn:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn:disabled {
+    background-color: var(--color-neutral-300);
+    cursor: not-allowed;
+}
+
+/* ==========================
+   Mensagens e Alertas
+========================== */
+.erro-msg {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.alert {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: var(--space-2);
+    border-radius: var(--radius-sm);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ==========================
+   Imagens e Logos
+========================== */
+.imagem-full {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 12px 24px rgba(21, 255, 0, 0.5);
+}
+
+.logo {
+    height: 70px;
+    border-radius: var(--radius-xl);
+}
+
+.nome {
+    flex: 1;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-light);
+    margin: 15px auto;
+    padding: 15px;
+}
+
+/* ==========================
+   Menu e Navegação
+========================== */
+#menu-btn {
+    font-size: var(--font-xl);
+    background: none;
+    border: none;
+    color: var(--color-neutral-100);
+    cursor: pointer;
+    display: none;
+}
+
+.menu-mobile,
+#menu-mobile {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.menu-mobile a,
+#menu-mobile a {
+    color: var(--color-neutral-100);
+    text-decoration: none;
+    font-size: var(--font-md);
+    transition: color 0.3s ease;
+}
+
+.menu-mobile a:hover {
+    color: var(--color-accent);
+}
+
+#menu-mobile a:hover {
+    color: #c8e6c9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-neutral-100);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-dark);
+}
+
+.menu-principal ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--color-primary);
+    padding: 0;
+}
+
+.menu-principal ul li {
+    position: relative;
+}
+
+.menu-principal ul li a {
+    display: block;
+    padding: var(--space-2) var(--space-4);
+    color: var(--color-neutral-100);
+    font-weight: 500;
+}
+
+.menu-principal ul li a:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--color-primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.submenu.active {
+    display: flex;
+}
+
+.submenu li a {
+    padding: var(--space-2) var(--space-4);
+    white-space: nowrap;
+}
+
+.badge {
+    background-color: var(--color-neutral-300);
+    color: var(--color-neutral-100);
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-xs);
+}
+
+.tag {
+    background-color: var(--color-neutral-300);
+    color: var(--color-dark);
+    padding: 0.3rem 0.6rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-sm);
+    margin-right: var(--space-1);
+}
+
+/* ==========================
+   Cards
+========================== */
+.card {
+    background-color: var(--color-light);
+    border-radius: var(--radius-xm);
+    box-shadow: 0 4px 12px rgba(21, 255, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: var(--space-4);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* ==========================
+   Carrossel
+========================== */
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.carrossel-container {
+    width: 1000%;
+    max-width: 1400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel-img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+    box-shadow: 0 14px 26px rgba(21, 255, 0, 0.5);
+}
+
+.carrossel-img.ativo {
+    display: block;
+    opacity: 1;
+}
+
+.btn-esquerda,
+.btn-direita {
+    background-color: var(--color-primary);
+    color: var(--color-neutral-100);
+    border: none;
+    padding: 4px 6px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-esquerda:hover,
+.btn-direita:hover {
+    background-color: var(--color-secondary);
+}
+
+/* ==========================
+   Formulário e Modal
+========================== */
+form {
+    background-color: var(--color-neutral-100);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 10px rgb(0, 247, 12);
+    overflow: hidden;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: var(--space-2);
+    margin-bottom: var(--space-2);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-md);
+    box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+dialog {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+dialog#modal-termos {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: var(--space-3);
+    border: none;
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    font-size: var(--font-md);
+    background-color: var(--color-neutral-100);
+    z-index: 1000;
+}
+
+dialog#modal-termos::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+dialog#modal-termos section {
+    margin: 1rem 0;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+/* ==========================
+   Animações
+========================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   Responsividade
+========================== */
+@media (max-width: 1600px) {
+    main {
+        grid-column: 1 / span 12;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+  /* Faz o submenu ocupar toda a largura dentro do menu mobile */
+  .menu-principal ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Submenu fica escondido inicialmente */
+  .menu-principal .submenu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-accent);
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+    margin-top: 4px;
+  }
+
+  /* Quando ativo, exibe o submenu dentro do menu mobile */
+  .menu-principal .submenu.active {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  /* Animação suave */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Corrige o clique */
+  #menu-projetos {
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 576px) {
+
+    h1,
+    h2 {
+        font-size: var(--font-lg);
+    }
+}
+
+@media (max-width: 400px) {
+    nav a {
+        font-size: var(--font-sm);
+    }
+}
