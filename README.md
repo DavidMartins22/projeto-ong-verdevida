@@ -75,7 +75,7 @@ Leitores de tela: atributos alt, aria-label e role aplicados corretamente
   <ul>
     <li><a href="index.html" aria-current="page">Início</a></li>
     <li><a href="projetos.html">Projetos</a></li>
-    <li><a href="contato.html">Contato</a></li>
+    <li><a href="contato.html">Cadastro</a></li>
   </ul>
 </nav>
 
