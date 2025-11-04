@@ -196,6 +196,7 @@ function initSubmenuToggle() {
 document.addEventListener("DOMContentLoaded", () => {
   console.log("🌿 Aplicação VerdeVida iniciada.");
 
+  // Inicializações principais
   loadTemplates();
   loadStorage();
   initCarrossel();
@@ -207,12 +208,13 @@ document.addEventListener("DOMContentLoaded", () => {
   validarFormulario("form-voluntario", "mensagem-voluntario");
   validarFormulario("form-contato", "mensagem-confirmacao");
 
-  // Abre o modal automaticamente apenas uma vez por sessão
+  // Exibe modal de termos uma vez por sessão
   const modal = document.getElementById("modal-termos");
   if (modal && !sessionStorage.getItem("termosExibidos")) {
     modal.showModal();
     sessionStorage.setItem("termosExibidos", "true");
   }
 
+  // Navegação inicial
   navigateTo(window.location.hash || "#home");
 });
