@@ -449,46 +449,84 @@ dialog#modal-termos section {
 }
 
 @media (max-width: 768px) {
-  /* Faz o submenu ocupar toda a largura dentro do menu mobile */
-  .menu-principal ul li {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Submenu fica escondido inicialmente */
-  .menu-principal .submenu {
-    display: none;
-    flex-direction: column;
-    background-color: var(--color-accent);
-    border-radius: 0 0 var(--radius-md) var(--radius-md);
-    margin-top: 4px;
-  }
-
-  /* Quando ativo, exibe o submenu dentro do menu mobile */
-  .menu-principal .submenu.active {
-    display: flex;
-    animation: slideDown 0.3s ease;
-  }
-
-  /* Animação suave */
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-5px);
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-color: var(--color-primary);
+        padding: var(--space-2);
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
-  /* Corrige o clique */
-  #menu-projetos {
-    display: block;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
-  }
+    /* Botão hamburguer */
+    #menu-btn {
+        display: block;
+        cursor: pointer;
+        margin-top: var(--space-1);
+        z-index: 3;
+    }
+
+    /* Menu escondido inicialmente */
+    .menu-mobile,
+    #menu-mobile {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--color-dark);
+        padding: var(--space-3);
+        border-radius: 0 0 var(--radius-md) var(--radius-md);
+        transition: all 0.3s ease;
+        /* animação suave */
+    }
+
+    /* Quando ativo, o menu aparece e empurra o conteúdo */
+    .menu-mobile.active,
+    #menu-mobile.active {
+        display: flex;
+    }
+
+    /* Links dentro do menu */
+    .menu-mobile a,
+    #menu-mobile a {
+        color: white;
+        text-align: center;
+        padding: var(--space-2);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .menu-mobile a:last-child,
+    #menu-mobile a:last-child {
+        border-bottom: none;
+    }
+
+    .nome {
+        text-align: center;
+        order: 1;
+    }
+
+    #menu-btn {
+        order: 2;
+    }
+
+    .menu-mobile,
+    #menu-mobile {
+        order: 3;
+    }
+
+    .menu-mobile,
+    #menu-mobile {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+    }
+
+    .menu-mobile.active,
+    #menu-mobile.active {
+        max-height: 300px;
+        /* altura máxima quando aberto */
+    }
+
 }
 
 @media (max-width: 576px) {
