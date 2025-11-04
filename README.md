@@ -199,7 +199,7 @@ David Martins Desenvolvedor Front-End / Autor GitHub • LinkedIn
 
 🧠 Créditos e Agradecimentos
 
-🎓 Instituição: [Cruzeiro do SUl Virtual / ADS]
+🎓 Instituição: [Cruzeiro do Sul Virtual / ADS]
 
 💡 Apoio: OpenAI / ChatGPT — suporte técnico e revisão didática
 
