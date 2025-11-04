@@ -48,12 +48,10 @@ Hospedagem GitHub Pages / Vercel Deploy em ambiente de produção
 ┃ ┃ ┣ logo.webp
 ┃ ┃ ┗ projetos/
 ┣ 📜 index.html
-┣ 📜 sobre.html
 ┣ 📜 projetos.html
-┣ 📜 contato.html
+┣ 📜 cadastro.html
 ┣ 📜 README.md
-┣ 📜 LICENSE
-┗ 📜 .gitignore
+┗ 📜 LICENSE
 
 ♿ Acessibilidade (WCAG 2.1 Nível AA)
 
